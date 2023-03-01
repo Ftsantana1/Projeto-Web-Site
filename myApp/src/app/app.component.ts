@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  titulo = 'Meu Aplicativo';
+  titulo = 'Meu Aplicativo';  
+  test = true; 
+  camposValidos(camposvalidados: any) {
+    if(this.test === true) {
+      camposvalidados = true;
+    } else {
+      camposvalidados = false;
+    }
+    return camposvalidados;
+  } 
+
 }
